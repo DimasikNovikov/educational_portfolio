@@ -1,0 +1,893 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.body {
+    width: 100%;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.button {
+    background: #E3B873;
+    color: #ffffff;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-family: 'Nunito Sans';
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.orange-circle {
+    background-color: #E3B873;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-text {
+    display: flex;
+    flex-direction: column;
+    width: 231px;
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+}
+
+.input-text label {
+    font-size: 13px;
+    line-height: 21px;
+    color: rgba(54, 54, 54, 0.5);
+    margin-bottom: 7px;
+}
+
+.input-text input {
+    color: #131313;
+    margin-bottom: 7px;
+}
+
+.input-text input::placeholder {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    line-height: 23px;
+    color: #363636;
+}
+
+.checkbox input {
+    display: none;
+}
+
+.checkbox label::before {
+    content: "";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18px;
+    height: 18px;
+    background-color: #E3B873;
+    margin-right: 9px;
+}
+
+.checkbox input:checked+label:before {
+    content: '\2714';
+    color: #FFFFFF;
+}
+
+.checkbox label {
+    color: #181818;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+/*---------------------------- header ----------------------------------------------------*/
+
+header {
+    padding: 22px 0;
+}
+
+.header-footer {
+    width: 100%;
+    background-color: #131313;
+    font-size: 11px;
+    line-height: 15px;
+    text-transform: uppercase;
+}
+
+.content-header-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 90px;
+}
+
+.logo {
+    color: #E3B873;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 47px;
+
+}
+
+.menu__item {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.menu__item:hover {
+    color: #E3B873;
+}
+
+.tel {
+    color: #E3B873;
+    text-decoration: underline;
+}
+
+.header-footer-button {
+    width: 161px;
+    height: 37px;
+
+}
+
+/*------------------------------------------------section-1------------------------------------*/
+
+.section-1 {
+    width: 100%;
+    height: 707px;
+    background-image: url(./image/Section_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blackout {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.section-1__content {
+    width: 515px;
+    align-self: flex-start;
+    padding-top: 194px;
+    margin: 0 800px 0 134px;
+}
+
+
+.subtitle {
+    font-family: 'Yeseva One';
+    font-size: 40px;
+    line-height: 53px;
+    text-transform: uppercase;
+    margin-bottom: 19px;
+}
+
+.title {
+    color: #e3b873;
+}
+
+.section-1__content p {
+    font-size: 22px;
+    line-height: 36px;
+    font-weight: 400;
+    margin-bottom: 41px;
+}
+
+.section-1__button_v1 {
+    width: 207px;
+    height: 51px;
+}
+
+.section-1__button_v2 {
+    background-color: #E3B87300;
+    border: 1px solid #FFFFFF;
+    margin-left: 20px;
+}
+
+/*---------------------------------------section-2 ----------------------------------------*/
+
+.section-2 {
+    width: 100%;
+    height: 1074px;
+    background-color: #131313;
+}
+
+.section-2__navigation {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 107px 191px 6.68px 626px;
+    margin-bottom: 53px;
+}
+
+.section-2__navigation a {
+    font-family: 'Yeseva One';
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.3);
+
+}
+
+.section-2__navigation a:hover {
+    color: #E3B873;
+    border-bottom: 1px solid #E3B873;
+}
+
+.section-2-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 92px;
+}
+
+.section-2-content__image {
+    max-width: 679px;
+}
+
+.section-2-content__text {
+    margin-right: 50px;
+}
+
+.section-2-content__text h2,
+h3 {
+    color: #E3B873;
+    text-transform: uppercase;
+    font-family: 'Yeseva One';
+}
+
+.section-2-content__text h2 {
+    font-size: 27px;
+    line-height: 37px;
+    width: 253px;
+    margin-bottom: 34px;
+}
+
+.section-2-content__image-mobile {
+    display: none;
+}
+
+.section-2-content__text p {
+    font-size: 14px;
+    line-height: 27px;
+    width: 442px;
+    margin-bottom: 42px;
+
+}
+
+.section-2-content__text h3 {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 9px;
+}
+
+.section-2-content__text span {
+    padding-right: 20px;
+    font-size: 13px;
+    line-height: 21px;
+
+}
+
+.section-2-content__text-part-2 div {
+    margin-bottom: 34px;
+    width: 172px;
+}
+
+.section-2-content__text-part-2 {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+
+/*---------------------------- section-3 -------------------------------------*/
+
+.section-3 {
+    margin-top: -324px;
+}
+
+.section-3__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
+.section-3__header span {
+    font-family: 'Yeseva One';
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+}
+
+.section-3__header-icon {
+    display: flex;
+    justify-content: center;
+
+}
+
+.section-3__header-icon img {
+    width: 33px;
+    height: 28px;
+    margin: 0 8px;
+}
+
+.section-3__header-icon div {
+    width: 32px;
+    height: 1.54px;
+    background-color: #E3B873;
+    border-radius: 30px;
+    align-self: center;
+}
+
+
+.section-3-video {
+    width: 817px;
+    height: 434px;
+    background: url(image/section-3-image-video.jpg) no-repeat;
+    background-size: cover;
+}
+
+.section-3-video-blackout {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-3-video__play-video-button {
+    width: 85px;
+    height: 85px;
+}
+
+.section-3__icon-shortline {
+    width: 55px;
+    height: 1.54px;
+    background-color: #E3B873;
+    border-radius: 30px;
+    margin-bottom: 34px;
+}
+
+.section-3-text__desktop {
+    display: block;
+    font-size: 18px;
+    line-height: 37px;
+    text-align: center;
+    color: #363636;
+    margin-bottom: 91px;
+}
+
+.section-3-text__mobile {
+    display: none;
+}
+
+.section-3-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 76px;
+}
+
+.section-3-form-part-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 49px;
+}
+
+.section-3-form-part-1__inputs {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin-bottom: 32px;
+}
+
+.section-3-form-part-2__button {
+    width: 200px;
+    height: 51px;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 27px;
+}
+
+
+/*---------------------------------- section-4 ---------------------------------*/
+
+.section-4 {
+    margin-bottom: 124px;
+}
+
+.section-4-main {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 54px;
+}
+
+.section-4-main__article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.section-4-main__article > img {
+    width: 392px;
+    height: 421px;
+    margin-bottom: -127px;
+}
+
+.section-4-main__article > div {
+    width: 330px;
+    height: 286px;
+    background-color: #FFFFFF;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+}
+
+.section-4-main__article > div > div {
+    padding: 25px 0 49px 34px;
+    margin-bottom: -26px;
+}
+
+.section-4-main__article > div > div h2 {
+    font-family: 'Yeseva One';
+    font-size: 18px;
+    line-height: 25px;
+    color: #363636;
+    margin-bottom: 13px;
+
+}
+
+.section-4-main__article > div > div ul li {
+    font-size: 13px;
+    line-height: 27px;
+    color: #959595;
+    margin-left: 15px;
+}
+
+.section-4-main__article > div button {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-size: 18px;
+    line-height: 25px;
+    width: 228px;
+    height: 54px;
+}
+
+/*--------------------------------- section 5 ---------------------------------*/
+
+.section-5 {
+    background: url(image/section-5_background.jpg) no-repeat;
+    background-size: auto 645px;
+    margin-bottom: 242px;
+}
+
+.section-5-part-1 {
+    margin-top: 117px;
+    display: flex;
+    justify-content: center;
+}
+
+.section-5-part-1-1 {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 80px;
+    counter-reset: item;
+}
+
+.section-5-part-1-1 li {
+
+    width: 375px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 19px;
+    color: #363636;
+}
+
+.section-5-part-1-1 li::before {
+    counter-increment: item;
+    content: '0' counter(item);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 42px;
+    min-height: 42px;
+    background-color: #E3B873;
+    border: 8px solid #FFFFFF;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+    border-radius: 100%;
+    color: #ffffff;
+    font-family: 'Yeseva One';
+    font-size: 18px;
+    line-height: 25px;
+    margin-right: 9px;
+}
+
+.section-5-part-1-2 {
+    box-sizing: border-box;
+    width: 506px;
+    height: 509px;
+    margin-left: 210px;
+    background-color: #131313;
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    padding: 18px 49px 27px;
+}
+
+.section-5-part-1-2 h2 {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 39px;
+}
+
+.section-5-part-1-2__input {
+    width: 408px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    margin-bottom: 48px;
+}
+
+.section-5-part-1-2__input:last-child {
+    margin-bottom: 16px;
+}
+
+.section-5-part-1-2__input label {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.section-5-part-1-2__input input {
+    background-color: #131313;
+    color: #FFFFFF;
+}
+
+.section-5-part-1-2__input input::placeholder {
+    color: #FFFFFF;
+}
+
+.section-5-part-1-2__checkbox label {
+    color: #ffffff;
+}
+
+.section-5-part-1-2__button {
+    margin-top: 39px;
+    width: 213px;
+    height: 51px;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 21px;
+    align-self: flex-end;
+}
+
+.section-5-part-2 {
+    margin-top: 39px;
+    margin-right: 330px;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+}
+
+.section-5-part-2__marker {
+    min-width: 72px;
+    min-height: 72px;
+    margin-right: 25px;
+}
+
+.section-5-part-2__text {
+    color: #E3B873;
+    width: 220px;
+}
+
+/*--------------------------------- section-6 -------------------------------*/
+
+.section-6-mobile {
+    display: none;
+}
+
+.section-6 {
+    width: 100%;
+    height: 864px;
+    background-image: url(image/section-6_backgroung-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 110px;
+}
+
+.section-6-blackout {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(109.8deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.9) 100%);
+}
+
+.section-6-container {
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.section-6__text {
+    width: 411px;
+    padding: 137px 77px 98px 99px;
+}
+
+.section-6__text h2 {
+    font-family: 'Yeseva One';
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #E3B873;
+    margin-bottom: 47px;
+}
+
+.section-6__text ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.section-6__text a {
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.section-6__text a:hover {
+    color: #E3B873;
+    text-decoration: underline;
+}
+
+.section-6__image-block-1,
+.section-6__image-block-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 38px;
+}
+
+.section-6__image-block-1 {
+    margin: -41px 43px -41px 0;
+}
+
+.section-6__image-block-2 {
+    margin: -113px 102px 40px 0;
+}
+
+/*------------------------------- section 7 ---------------------------------*/
+
+.section-7__text {
+    margin-top: 24px;
+    margin-bottom: 39px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 29px;
+    color: #363636;
+}
+
+.section-7-articles {
+    display: flex;
+    flex-direction: row;
+    gap: 54px;
+}
+
+.section-7-articles__article {
+    width: 376px;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+}
+
+.section-7-articles__article>div {
+    padding: 24px 32px 0 20px;
+}
+
+.section-7-articles__article-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.section-7-articles__article-header span {
+    font-family: 'Yeseva One';
+    font-size: 18px;
+    line-height: 23px;
+    color: #181818;
+    margin-left: 23px;
+}
+
+.section-7-articles__article-text {
+    font-size: 13px;
+    line-height: 23px;
+    color: #959595;
+
+}
+
+.section-7-articles__article-button {
+    width: 294px;
+    height: 54px;
+    margin-top: 63px;
+    margin-bottom: -27px;
+    box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.section-7-articles__article-button>span {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-size: 17px;
+    line-height: 24px;
+
+}
+
+.section-7-articles__article-button>div {
+    width: 0.75px;
+    height: 100%;
+    background-color: #FFFFFF;
+    align-self: stretch;
+}
+
+.section-7-background-image {
+    position: relative;
+    z-index: -1;
+    bottom: 65px;
+    height: 355px;
+    opacity: 15%;
+}
+
+.section-7-background-image-part-1 {
+    width: 50%;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.section-7-background-image-part-2 {
+    width: 50%;
+}
+
+/*--------------------------------section-8----------------------------------*/
+
+.section-8 {
+    background: url(image/section-8-background-image.jpg) no-repeat;
+    background-size: cover;
+    height: 954px;
+}
+
+.section-8-blackout {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
+}
+
+.section-8-form {
+    width: 883px;
+    height: 446px;
+    margin-top: -223px;
+    margin-bottom: 52px;
+    background-color: #181818;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-8-form h2 {
+    font-family: 'Yeseva One';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 34px 0 46px;
+}
+
+.section-8-form__input-1 {
+    width: 517px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 49px;
+}
+
+.section-8-form__input-1-1 {
+    width: 231px;
+}
+
+.section-8-form__input-2 {
+    width: 517px;
+    margin-bottom: 46px;
+}
+
+.section-8-form__input label {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.section-8-form__input input {
+    background-color: #181818;
+    color: #FFFFFF;
+}
+
+.section-8-form__input input::placeholder {
+    color:#FFFFFF;
+}
+
+.section-8-form__input-1-1, .section-8-form__input-2  {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.section-8-form_checkbox label {
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 23px;
+
+}
+
+.section-8-form_checkbox {
+    margin-bottom: 50px;
+}
+
+.section-8-form__button {
+    width: 200px;
+    height: 51px;
+    font-size: 13px;
+    line-height: 27px;
+    font-style: normal;
+}
+
+.section-8-text {
+    font-family: 'Yeseva One';
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #E3B873;
+    margin-bottom: 26px;
+}
+
+.section-8-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 43px;
+}
+
+.section-8-links__link {
+    width: 28px;
+    height: 28px;
+}
+
+/*---------------------------------- footer ----------------------------------*/
+
+footer {
+    padding: 42px 0;
+}

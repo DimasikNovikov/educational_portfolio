@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameBoard {
+    position: relative;
+    padding: 10px;
+    display: inline-block;
+    border: 10px double white;
+}
+
+.header {
+    margin-bottom: 30px;
+}
+
+.score__currentScore {
+    width: 100px;
+    height: 40px; 
+    box-sizing: border-box;
+    background-color: rgba(0, 60, 255, 0.3);
+    box-shadow: inset 2px 2px 10px blue, inset -2px -2px 10px blue;
+    margin-bottom: 10px;
+    padding: 2px 10px 8px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: right;
+    color: rgb(188, 122, 231);
+}
+
+.score__bestScore {
+    color: blue;
+    font-size: 20px;
+}
+
+.field {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    border: 1px solid rgb(188, 122, 231);
+}
+
+.cell {
+    box-sizing: border-box;
+    border: 0.5px solid rgba(188, 122, 231, 0.3);
+
+}
+
+.snakeBody {
+    box-sizing: border-box;
+    border: 10px double navy;
+    background-color: blue;
+    background-clip: content-box;
+    
+}
+
+.snakeHead {
+    box-sizing: border-box;
+    border: 10px double blue;
+    background-color: royalblue;
+    background-clip: content-box;
+}
+
+.apple {
+    box-sizing: border-box;
+    border: 10px double crimson;
+    background-clip: content-box;
+    background-color: red;
+}
+
+.windowGameOver {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: black;
+    border: 5px double white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+   
+}
+
+.textGameOver {
+    width: 200px;
+    padding: 5px;
+    font-size: 40px;
+    font-weight: bold;
+    color: greenyellow;
+}
+
+.repeatGame {
+    background-color: green;
+    color: white;
+    padding: 3px;
+    cursor: pointer;
+}
